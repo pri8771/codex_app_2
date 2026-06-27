@@ -1,0 +1,3 @@
+import SwiftUI
+
+struct PacksView: View { @EnvironmentObject private var store: StoreService; var body: some View { ZStack { NeonBackground(); ScrollView { VStack(spacing:16) { ForEach(ChallengePack.all) { pack in NeonCard { VStack(alignment:.leading, spacing:12) { Text(pack.title).font(.title2.bold()); Text(pack.detail).foregroundStyle(NeonTheme.softText); if let id = pack.productID, !store.hasPack(pack) { NeonCTA(title:"Unlock", icon:"lock.open.fill") { Task { await store.buy(id) } } } else { Text("Ready").foregroundStyle(NeonTheme.lime) } } } }; NavigationLink("Go Pro") { PaywallView() } }.padding(20) } }.navigationTitle("Packs") } }

@@ -1,0 +1,4 @@
+import SwiftUI
+import SwiftData
+
+struct HomeView: View { @EnvironmentObject private var store: StoreService; @Query private var sessions: [GameSessionRecord]; var topScore: Int { sessions.map(\.score).max() ?? 0 }; var body: some View { ZStack { NeonBackground(); ScrollView { VStack(alignment:.leading, spacing:18) { Text("AR Dare Lab").font(.largeTitle.bold()); Text("Local AR party dares with neon scorecards.").foregroundStyle(NeonTheme.softText); HStack { MetricPill(title:"Rounds", value:"\(sessions.count)"); MetricPill(title:"Best", value:topScore.pointsText, color:NeonTheme.magenta) }; NeonCard { VStack(alignment:.leading, spacing:12) { Text(store.isPro ? "Pro active" : "Free plan").font(.title3.bold()); Text(store.isPro ? "All packs and no mark on scorecards." : "Base pack and five shares per day.").foregroundStyle(NeonTheme.softText) } }; NavigationLink("Pick a dare") { PlayView() } }.padding(20) } }.navigationTitle("Home") } }
