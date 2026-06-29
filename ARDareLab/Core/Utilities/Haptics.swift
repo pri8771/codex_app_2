@@ -5,4 +5,5 @@ import UIKit
 
 enum Haptics { static func tap() { #if canImport(UIKit)
 UIImpactFeedbackGenerator(style:.medium).impactOccurred()
-#endif } }
+#endif
+} }

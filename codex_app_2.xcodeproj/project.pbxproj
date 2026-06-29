@@ -1,50 +1,358 @@
 // !$*UTF8*$!
 {
-	"archi\U0076e\U0056\U0065\U0072\U0073\U0069\U006F\U006E" = 1;
-	classes = {};
-	"object\U0056\U0065\U0072\U0073\U0069\U006F\U006E" = 77;
-	objects = {
-		A1 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600;}; buildConfigurationList = L1; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = G1; productRefGroup = GP; projectDirPath = ""; projectRoot = ""; targets = (T1, T2); };
-		T1 = {isa = PBXNativeTarget; buildConfigurationList = L2; buildPhases = (S1, FW1, R1); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (FS1); name = ARDareLab; packageProductDependencies = (); productName = ARDareLab; productReference = P1; productType = "com.apple.product-type.application"; };
-		T2 = {isa = PBXNativeTarget; buildConfigurationList = L3; buildPhases = (S2, FW2, R2); buildRules = (); dependencies = (D1); fileSystemSynchronizedGroups = (FS2); name = ARDareLabTests; packageProductDependencies = (); productName = ARDareLabTests; productReference = P2; productType = "com.apple.product-type.bundle.unit-test"; };
-		CP1 = {isa = PBXContainerItemProxy; containerPortal = A1; proxyType = 1; remoteGlobalIDString = T1; remoteInfo = ARDareLab; };
-		D1 = {isa = PBXTargetDependency; target = T1; targetProxy = CP1; };
-		FS1 = {isa = PBXFileSystemSynchronizedRootGroup; path = ARDareLab; sourceTree = "<group>"; };
-		FS2 = {isa = PBXFileSystemSynchronizedRootGroup; path = ARDareLabTests; sourceTree = "<group>"; };
-		G1 = {isa = PBXGroup; children = (FS1, FS2, GF, GP); sourceTree = "<group>"; };
-		GF = {isa = PBXGroup; children = (F1, F2, F3, F4, F5, F6, F7); name = Frameworks; sourceTree = "<group>"; };
-		GP = {isa = PBXGroup; children = (P1, P2); name = Products; sourceTree = "<group>"; };
-		P1 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDareLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		P2 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARDareLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1 = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
-		F2 = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
-		F3 = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
-		F4 = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		F5 = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
-		F6 = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		F7 = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		BF1 = {isa = PBXBuildFile; fileRef = F1; settings = {ATTRIBUTES = (Weak, ); }; };
-		BF2 = {isa = PBXBuildFile; fileRef = F2; settings = {ATTRIBUTES = (Weak, ); }; };
-		BF3 = {isa = PBXBuildFile; fileRef = F3; settings = {ATTRIBUTES = (Weak, ); }; };
-		BF4 = {isa = PBXBuildFile; fileRef = F4; settings = {ATTRIBUTES = (Weak, ); }; };
-		BF5 = {isa = PBXBuildFile; fileRef = F5; settings = {ATTRIBUTES = (Weak, ); }; };
-		BF6 = {isa = PBXBuildFile; fileRef = F6; settings = {ATTRIBUTES = (Weak, ); }; };
-		BF7 = {isa = PBXBuildFile; fileRef = F7; settings = {ATTRIBUTES = (Weak, ); }; };
-		S1 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		S2 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		FW1 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (BF1, BF2, BF3, BF4, BF5, BF6, BF7); runOnlyForDeploymentPostprocessing = 0; };
-		FW2 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		R1 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		R2 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		C1 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug; };
-		C2 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; VALIDATE_PRODUCT = YES;}; name = Release; };
-		C3 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; "CURRENT_PROJECT_\U0056\U0045\U0052\U0053\U0049\U004F\U004E" = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "AR Dare Lab"; INFOPLIST_KEY_NSCameraUsageDescription = "Required for AR play."; INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone may be used during recording."; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; "MARKETING_\U0056\U0045\U0052\U0053\U0049\U004F\U004E" = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.ardarelab.app; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; "SWIFT_\U0056\U0045\U0052\U0053\U0049\U004F\U004E" = 5.9; TARGETED_DEVICE_FAMILY = 1;}; name = Debug; };
-		C4 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; "CURRENT_PROJECT_\U0056\U0045\U0052\U0053\U0049\U004F\U004E" = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "AR Dare Lab"; INFOPLIST_KEY_NSCameraUsageDescription = "Required for AR play."; INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone may be used during recording."; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; "MARKETING_\U0056\U0045\U0052\U0053\U0049\U004F\U004E" = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.ardarelab.app; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; "SWIFT_\U0056\U0045\U0052\U0053\U0049\U004F\U004E" = 5.9; TARGETED_DEVICE_FAMILY = 1;}; name = Release; };
-		C5 = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.ardarelab.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; "SWIFT_\U0056\U0045\U0052\U0053\U0049\U004F\U004E" = 5.9; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARDareLab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARDareLab"; TEST_TARGET_NAME = ARDareLab;}; name = Debug; };
-		C6 = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.ardarelab.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; "SWIFT_\U0056\U0045\U0052\U0053\U0049\U004F\U004E" = 5.9; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARDareLab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARDareLab"; TEST_TARGET_NAME = ARDareLab;}; name = Release; };
-		L1 = {isa = XCConfigurationList; buildConfigurations = (C1, C2); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		L2 = {isa = XCConfigurationList; buildConfigurations = (C3, C4); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		L3 = {isa = XCConfigurationList; buildConfigurations = (C5, C6); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	archiveVersion = 1;
+	classes = {
 	};
-	rootObject = A1;
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		AA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA6;
+			remoteInfo = ARDareLab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA8 /* ARDareLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDareLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9 /* ARDareLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARDareLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AA30 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AA6 /* ARDareLab */;
+		};
+		AA33 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AA7 /* ARDareLabTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AA4 /* ARDareLab */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AA30 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ARDareLab; sourceTree = "<group>"; };
+		AA5 /* ARDareLabTests */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AA33 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ARDareLabTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA2 = {
+			isa = PBXGroup;
+			children = (
+				AA4 /* ARDareLab */,
+				AA5 /* ARDareLabTests */,
+				AA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8 /* ARDareLab.app */,
+				AA9 /* ARDareLabTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA6 /* ARDareLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA11 /* Build configuration list for PBXNativeTarget "ARDareLab" */;
+			buildPhases = (
+				AA16 /* Sources */,
+				AA17 /* Frameworks */,
+				AA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AA4 /* ARDareLab */,
+			);
+			name = ARDareLab;
+			productName = ARDareLab;
+			productReference = AA8 /* ARDareLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA7 /* ARDareLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA12 /* Build configuration list for PBXNativeTarget "ARDareLabTests" */;
+			buildPhases = (
+				AA19 /* Sources */,
+				AA20 /* Frameworks */,
+				AA21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA31 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA5 /* ARDareLabTests */,
+			);
+			name = ARDareLabTests;
+			productName = ARDareLabTests;
+			productReference = AA9 /* ARDareLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1700;
+				LastUpgradeCheck = 1700;
+				TargetAttributes = {
+					AA6 = {
+						CreatedOnToolsVersion = 17.0;
+					};
+					AA7 = {
+						CreatedOnToolsVersion = 17.0;
+						TestTargetID = AA6;
+					};
+				};
+			};
+			buildConfigurationList = AA10 /* Build configuration list for PBXProject "codex_app_2" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA2;
+			productRefGroup = AA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA6 /* ARDareLab */,
+				AA7 /* ARDareLabTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA6 /* ARDareLab */;
+			targetProxy = AA32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 796XH483R4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Dare Lab";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for local AR rounds.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic audio can be part of a local clip.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardarelab.app;
+				PRODUCT_NAME = ARDareLab;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AA25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 796XH483R4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Dare Lab";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for local AR rounds.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic audio can be part of a local clip.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardarelab.app;
+				PRODUCT_NAME = ARDareLab;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AA26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 796XH483R4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardarelab.tests;
+				PRODUCT_NAME = ARDareLabTests;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARDareLab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARDareLab";
+				TEST_TARGET_NAME = ARDareLab;
+			};
+			name = Debug;
+		};
+		AA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 796XH483R4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardarelab.tests;
+				PRODUCT_NAME = ARDareLabTests;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARDareLab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARDareLab";
+				TEST_TARGET_NAME = ARDareLab;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA10 /* Build configuration list for PBXProject "codex_app_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA22 /* Debug */,
+				AA23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA11 /* Build configuration list for PBXNativeTarget "ARDareLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA24 /* Debug */,
+				AA25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA12 /* Build configuration list for PBXNativeTarget "ARDareLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA26 /* Debug */,
+				AA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA1 /* Project object */;
 }
